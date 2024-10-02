@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #EAEAEA;
+}
+
+.left-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.left-header span, p, .nome span, .p-footer p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+.left-header h1, .top-main h2, .titulo-footer h2, form h2 {
+    font-size: 2rem;
+    font-family: Helvetica;
+    color: black;
+}
+
+.left-header p {
+    text-align: start;
+}
+
+.left-header button, form button {
+    border: none;
+    border-radius: 10px;
+    background-color: #2D2D2D;
+    padding: 24px 64px;
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.left-header button:hover, form button:hover {
+    background-color: black;
+}
+
+.left-header button a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.left-header button a:hover {
+    text-decoration: underline;
+}
+
+.right-header {
+    padding: 20px;
+}
+
+.right-header img {
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: space-between;
+    gap: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o main */
+}
+
+.top-main {
+    text-align: center;
+}
+
+.mid-main, .under-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-footer form {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+form input, button {
+    align-self: self-start;
+}
+
+form input {
+    height: 40px;
+    max-width: 300px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 2px solid #2D2D2D; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: start;
+}
+
+form input::placeholder, .styled-textarea::placeholder {
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.styled-textarea {
+    width: 100%; /* Ajusta a largura */
+    height: 150px; /* Altura do textarea */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #2D2D2D; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    resize: none; /* Desabilita o redimensionamento */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.styled-textarea:focus {
+    border-color: black; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
